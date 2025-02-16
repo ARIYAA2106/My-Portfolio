@@ -10,6 +10,9 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
   </head>
   <body>
     <!-- Header Navbar -->
@@ -40,7 +43,10 @@
             </button>
 
             <nav
-              id="nav-menu"
+              id="nav-menu" data-aos="fade-left"
+              data-aos-anchor="#example-anchor"
+              data-aos-offset="500"
+              data-aos-duration="500"
               class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
             >
               <ul class="block lg:flex">
@@ -128,7 +134,9 @@
           </div>
           <div class="self-end w-full px-4 lg:w-1/2">
             <div class="relative mt-2 lg:m-8 lg:right-0">
-              <img
+              <img data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"              
+              data-aos-duration="1500"
                 src="assets/ariya.png"
                 alt="Ariya"
                 class="max-w-full mx-auto rounded-full"
@@ -676,5 +684,9 @@
     <!-- Footer End-->
 
     <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
