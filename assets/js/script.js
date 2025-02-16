@@ -1,3 +1,14 @@
+// Conditional WhatsApp
+const whatsapp = document.getElementById('whatsapp');
+const pesan = "Haloo!, Apakah betul ini dengan ariya ?";
+const number = +6281572240336;
+const encoded = encodeURIComponent(pesan);
+
+whatsapp.href = `https://wa.me/${number}?text=${encoded}`;
+
+
+
+
 // Navbar-fixed
 window.onscroll = function(){
     const header = document.querySelector('header');
